@@ -1,2 +1,27 @@
 #AWS Instance - HDF Server Setup
 
+The public AMI that has the server running is : ami-4e77ac58
+
+Launch an AWS Instance with this AMI. 
+
+```{}
+
+  source activate h5serv
+  cd hdf5-json/h5serv/server/
+  python app.py
+ 
+```
+
+This would start the HDF server running. 
+
+Open a new terminal, launch the AWS instance again. 
+
+```{}
+
+  source activate h5serv 
+  #to access data - use the python scripts in /scripts
+  cd scripts/
+  python testall.py
+ 
+```
+
